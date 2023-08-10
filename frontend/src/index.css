@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.blog-preview a{
+  text-decoration: none;
+}
+
+
+/*flash card*/
+.flash-card{
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 300px;
+  padding: 10px 16px;
+  margin: 20px 0;
+  box-shadow: 10px 10px rgba(0,0,0,0.1);
+}
+
+
+.show-index{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+.text-button {
+  font-size: 50px;
+  text-align: center;
+  text-decoration: solid;
+  background-color: transparent;
+  border-color: transparent;/* Your styles for the text buttons here */
+  cursor: pointer;
+}
+
+.button-wrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.right-button {
+  align-self: flex-end;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.left-button {
+  align-self: flex-start;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*Other stuff in set preview*/
+.set-preview{
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.heading-detail{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.term-preview{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.delete-button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new study set */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.def-term{
+  padding:10px;
+}
+
+.test-button{
+  background: #f1356d;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.test-button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*Style for the quiz component*/
+.test-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.questions {
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+  padding: 15px;
+  margin: 15px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 10px;
+}
+
+.options input{
+  margin-bottom: 10px;
+}
+
+.submit-button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+/*Results*/
+.results{
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+  padding: 30px;
+  margin: 30px;
+  border: 0;
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.reset-button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.reset-button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.study-button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.study-button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.your-score{
+  margin-bottom: 10px;
+}
+
+.correct{
+  color: #00b91f;
+}
+
+.incorrect{
+  color: #d62424;
+}
+
+.show-correct{
+  margin: 15px;
+}
+
+.show-incorrect{
+  margin: 15px;
+}
