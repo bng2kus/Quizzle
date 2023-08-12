@@ -33,7 +33,7 @@ const Create = () => {
     }
     else{
         //POST request
-        const response = await fetch('/api/sets', {
+        const response = await fetch('https://quizzle.onrender.com/api/sets', {
           method: 'POST',
           body: JSON.stringify(set),
           headers: {
