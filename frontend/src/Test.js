@@ -13,7 +13,7 @@ const Test = () => {
     //fetches data with specific id
     useEffect(() => {
         const fetchSets = async () => {
-            const response = await fetch('https://quizzle.onrender.com/api/sets/' + id)
+            const response = await fetch('/api/sets/' + id)
             const json = await response.json()
 
             if(response.ok){
