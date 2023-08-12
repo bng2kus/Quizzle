@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchSets = async () => {
-            const response = await fetch('https://quizzle.onrender.com/api/sets')
+            const response = await fetch('/api/sets')
             const json = await response.json()
 
             if(response.ok){
