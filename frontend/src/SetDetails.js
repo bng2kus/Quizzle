@@ -17,7 +17,7 @@ const SetDetails = () => {
     //fetches data with specific id
     useEffect(() => {
         const fetchSets = async () => {
-            const response = await fetch('/api/sets/' + id)
+            const response = await fetch('https://quizzle.onrender.com/api/sets/' + id)
             const json = await response.json()
 
             if(response.ok){
@@ -37,7 +37,7 @@ const SetDetails = () => {
 
     //deletes a study set
     const handleClick = async () => {
-        const response = await fetch('/api/sets/' + set._id, {
+        const response = await fetch('https://quizzle.onrender.com/api/sets/' + set._id, {
             method: 'DELETE'
         })
         const json = await response.json()
