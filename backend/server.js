@@ -7,10 +7,13 @@ const setRoutes = require('./routes/sets')
 
 //for CORS
 const cors = require('cors');
+
+/*
 const corsOptions = {
     //change origins to connect properly
     origin: 'https://64d7297817608f5a7af157c4--fluffy-parfait-d90022.netlify.app'
   };
+*/
 
 //express app
 const app = express()
@@ -19,7 +22,7 @@ const app = express()
 app.use(express.json())
 
 // Use the CORS middleware
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use((req, res, next) => {
     console.log(req.path, req.method)
