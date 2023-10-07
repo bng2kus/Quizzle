@@ -11,7 +11,7 @@ const cors = require('cors');
 
 const corsOptions = {
     //change origins to connect properly
-    origin: 'https://64d73c119f1f935dadd747d4--profound-macaron-26bbc5.netlify.app'
+    origin: 'https://profound-macaron-26bbc5.netlify.app/'
   };
 
 
