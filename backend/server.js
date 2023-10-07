@@ -25,6 +25,7 @@ app.use(express.json())
 app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'https://profound-macaron-26bbc5.netlify.app');
     console.log(req.path, req.method)
     next()
 })
