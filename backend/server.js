@@ -11,7 +11,7 @@ const cors = require('cors');
 
 const corsOptions = {
     //change origins to connect properly
-    origin: 'https://497abcbf-3ca5-4073-be5d-e587c7d63d5d--profound-macaron-26bbc5.netlify.app/'
+    origin: 'https://profound-macaron-26bbc5.netlify.app/'
   };
 
 
@@ -25,7 +25,7 @@ app.use(express.json())
 app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://497abcbf-3ca5-4073-be5d-e587c7d63d5d--profound-macaron-26bbc5.netlify.app');
+    res.setHeader('Access-Control-Allow-Origin', 'https://profound-macaron-26bbc5.netlify.app');
     console.log(req.path, req.method)
     next()
 })
